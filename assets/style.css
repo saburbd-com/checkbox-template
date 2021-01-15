@@ -1,0 +1,84 @@
+/* Font Include */
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Rajdhani:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+h1,
+p {
+    font-family: 'Langar', cursive;
+}
+
+/* Responsive */
+@media only screen and (min-width: 576px) {
+    h1 {
+        margin-top: 75px;
+    }
+
+    .col-md-6 {
+        min-height: 30vh;
+    }
+
+    .center {
+        top: 50%;
+        left: 50%;
+        height: 25vh;
+        position: absolute !important;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .center {
+        height: 70vh;
+        overflow-y: auto;
+        padding-top: 50px;
+    }
+}
+
+/* Checkbox Responsive */
+@media only screen and (max-width: 575px) {
+    .checkbox {
+        height: 70px;
+    }
+
+    .checkbox label {
+        width: 35px;
+        height: 35px;
+    }
+
+    .checkbox:after {
+        height: 8px;
+    }
+    
+    .col-md-6 {
+        margin-bottom: 50px;
+    }
+}
